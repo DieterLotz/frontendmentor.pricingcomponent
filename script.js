@@ -2,8 +2,8 @@ const leftArrowKey = 'ArrowLeft';
 const rightArrowKey = 'ArrowRight';
 
 function toggle(){
-    const monthlyPrices = Array.from(document.getElementsByName('monthlyPrice'));
-    const annualPrices = Array.from(document.getElementsByName('annualPrice')); 
+    const monthlyPrices = Array.from(document.getElementsByClassName('monthly'));
+    const annualPrices = Array.from(document.getElementsByClassName('annually')); 
     const checkbox = document.getElementById('switch');
     
     if(monthlyPrices[0].style.display === 'initial'){
