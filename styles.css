@@ -214,7 +214,7 @@ button:hover {
     border: 1px solid white;
 }
 
-@media screen and (max-width:1270px){
+@media screen and (max-width:1445px){
     body {
         align-items: center;
         overflow-x: hidden;
