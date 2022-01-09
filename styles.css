@@ -108,6 +108,7 @@ p span {
     display: flex;
     justify-content: center;
     width: 100%;
+    min-height: 32rem;
     height: 50%;
 }
 

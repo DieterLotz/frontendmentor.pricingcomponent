@@ -5,8 +5,8 @@ function toggle(){
     const monthlyPrices = Array.from(document.getElementsByClassName('monthly'));
     const annualPrices = Array.from(document.getElementsByClassName('annually')); 
     const checkbox = document.getElementById('switch');
-    
-    if(monthlyPrices[0].style.display === 'initial'){
+
+    if(checkbox.checked){
         checkbox.checked = true;
 
         annualPrices.forEach(element => {
@@ -16,7 +16,6 @@ function toggle(){
         monthlyPrices.forEach(element => {
             element.style.display = 'none';
         });
-
         return;
     }
 
@@ -37,4 +36,4 @@ document.addEventListener('keydown', (event) => {
 
     if(event.key === leftArrowKey || event.key === rightArrowKey)
         toggle();
-})
+});
